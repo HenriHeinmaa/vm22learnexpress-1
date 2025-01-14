@@ -1,7 +1,7 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
 const app = express();
-const port = 3000;
+const port = 4000;
 const cookieParser = require('cookie-parser');
 const {Movie, User} = require('./models/index.js');
 const fileUpload = require('express-fileupload');
