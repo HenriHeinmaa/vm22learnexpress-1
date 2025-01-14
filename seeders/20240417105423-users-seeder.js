@@ -6,16 +6,16 @@ const { faker } = require('@faker-js/faker');
 module.exports = {
   async up (queryInterface, Sequelize) {
     await User.create({
-      name: 'Kaspar Martin Suursalu',
-      email: 'kasparsu@gmail.com',
-      password: bcrypt.hashSync('password', 12)
+      name: 'Henri Heinmaa',
+      email: 'henriheinmaa75@gmail.com',
+      password: bcrypt.hashSync('password', 15)
     });
 
     for(let i = 0; i<10;i++){
       await User.create({
         name: faker.person.fullName(),
         email: faker.internet.email(),
-        password: bcrypt.hashSync('password', 12)
+        password: bcrypt.hashSync('password', 15)
       });
     }
   },
